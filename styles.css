@@ -99,18 +99,26 @@
 
     .tiktok {
       color: #fd3c3c;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0s;
     }
 
     a {
       color: #c300ff;
       text-decoration: none;
       transition: color 0.2s ease-in-out;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0s;
     }
 
     a:hover {
       color: #8803b1;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0s;
     }
 
     a:visited {
       color: #b84af8;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0s;
     }
