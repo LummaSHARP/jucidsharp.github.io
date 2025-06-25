@@ -20,10 +20,10 @@
 
     /* Glow pulse for colored spans */
     @keyframes glowPulse {
-      0%, 80% {
+      0%, 100% {
         text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
       }
-      50% {
+      25% {
         text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
       }
     }
