@@ -1,12 +1,41 @@
-@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap);
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
 
-body {
+    /* Fade in whole body */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Slide and fade in the main heading */
+    @keyframes slideInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Glow pulse for colored spans */
+    @keyframes glowPulse {
+      0%, 100% {
+        text-shadow: 0 0 5px currentColor, 0 0 10px currentColor;
+      }
+      50% {
+        text-shadow: 0 0 15px currentColor, 0 0 25px currentColor;
+      }
+    }
+
+    body {
       background: #0d0d0d;
       color: #eee;
       font-family: 'JetBrains Mono', monospace;
       letter-spacing: 0.07em;
       font-weight: 500;
       padding: 2rem;
+      animation: fadeIn 1s ease forwards;
     }
 
     h1 {
@@ -14,50 +43,64 @@ body {
       margin-bottom: 1rem;
       color: #ffffff;
       transition: ease-in-out 0.3s;
+      animation: slideInDown 0.8s ease forwards;
     }
 
     .purplespan {
-        font-weight: 700;
-        color: #c300ff;
+      font-weight: 700;
+      color: #c300ff;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0s;
     }
 
     .yellowspan {
-        font-weight: 700;
-        color: #ffc400;
+      font-weight: 700;
+      color: #ffc400;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0.3s;
     }
 
     .bluespan {
-        font-weight: 700;
-        color: #4d4dff;
+      font-weight: 700;
+      color: #4d4dff;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0.6s;
     }
 
     .redspan {
-        font-weight: 700;
-        color: #ff4d4d;
+      font-weight: 700;
+      color: #ff4d4d;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 0.9s;
     }
 
     .greenspan {
-        font-weight: 700;
-        color: #57e457;
+      font-weight: 700;
+      color: #57e457;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 1.2s;
     }
 
     .brownspan {
-        font-weight: 700;
-        color: #c57229;
+      font-weight: 700;
+      color: #c57229;
+      animation: glowPulse 2s ease-in-out infinite;
+      animation-delay: 1.5s;
     }
 
     .mini {
-    font-weight: 600;
-    font-size: 0.75rem;
-    vertical-align: middle;
-    position: relative;
-    left: -0.4em;
-    bottom: -0.2em
+      font-weight: 600;
+      font-size: 0.75rem;
+      vertical-align: middle;
+      position: relative;
+      left: -0.4em;
+      bottom: -0.2em;
     }
 
     .tiktok {
       color: #fd3c3c;
     }
+
     a {
       color: #c300ff;
       text-decoration: none;
