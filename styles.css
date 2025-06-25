@@ -55,6 +55,9 @@ body {
     bottom: -0.2em
     }
 
+    .tiktok {
+      color: #fd3c3c;
+    }
     a {
       color: #c300ff;
       text-decoration: none;
